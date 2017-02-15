@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney | Movies</title>
+    <link rel="icon" href="../img/crown.png">
+    <link rel="stylesheet" href="../style.css"/>
+
+    <style>
+
+    </style>
+  </head>
+
+  <body onload="loadMoviesInOrderV2()">
+    <header>
+      <div class="container">
+        <a href="../home.html">
+          <img src="../img/logo2.png"/>
+          <!-- <h1>Princess Movies</h1> -->
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../home.html">HOME</a></li>
+            <li><a class="current" href="movies.html">MOVIES</a></li>
+            <li><a href="request.html">REQUEST MOVIE</a></li>
+          </ul>
+          <img id="TandD" src="../img/tandd.gif" alt="Tip and Dash">
+
+        </nav>
+      </div>
+    </header>
+
+    <section id="search">
+      <div class="container">
+        <div id="searchBar">
+          <input type='text' rows="100" oninput="searchBar()" id='movieTitle' placeholder='Enter Movie Title'/>
+        </div>
+
+        <div id="alphabetSearch">
+          <ul>
+            <li><a href="javascript:alphaSearch('A');">A</a></li>
+            <li><a href="javascript:alphaSearch('B');">B</a></li>
+            <li><a href="javascript:alphaSearch('C');">C</a></li>
+            <li><a href="javascript:alphaSearch('D');">D</a></li>
+            <li><a href="javascript:alphaSearch('E');">E</a></li>
+            <li><a href="javascript:alphaSearch('F');">F</a></li>
+            <li><a href="javascript:alphaSearch('G');">G</a></li>
+            <li><a href="javascript:alphaSearch('H');">H</a></li>
+            <li><a href="javascript:alphaSearch('I');">I</a></li>
+            <li><a href="javascript:alphaSearch('J');">J</a></li>
+            <li><a href="javascript:alphaSearch('K');">K</a></li>
+            <li><a href="javascript:alphaSearch('L');">L</a></li>
+            <li><a href="javascript:alphaSearch('M');">M</a></li>
+            <li><a href="javascript:alphaSearch('N');">N</a></li>
+            <li><a href="javascript:alphaSearch('O');">O</a></li>
+            <li><a href="javascript:alphaSearch('P');">P</a></li>
+            <li><a href="javascript:alphaSearch('Q');">Q</a></li>
+            <li><a href="javascript:alphaSearch('R');">R</a></li>
+            <li><a href="javascript:alphaSearch('S');">S</a></li>
+            <li><a href="javascript:alphaSearch('T');">T</a></li>
+            <li><a href="javascript:alphaSearch('U');">U</a></li>
+            <li><a href="javascript:alphaSearch('V');">V</a></li>
+            <li><a href="javascript:alphaSearch('W');">W</a></li>
+            <li><a href="javascript:alphaSearch('X');">X</a></li>
+            <li><a href="javascript:alphaSearch('Y');">Y</a></li>
+            <li><a href="javascript:alphaSearch('Z');">Z</a></li>
+          </ul>
+        </div>
+        <h3>Movies Searched: <span id="searchedFor">All Movies</span>
+      </div>
+
+    <div id="loadMovies" class="container">
+    </div>
+
+
+    </section>
+        <br><br><br>
+    <section id="moviesDisplay">
+      <div class="container">
+        <hr>
+        <h3>TOP 5 MOVIE PICKS</h3>
+        <hr>
+        <a href="../movies/the-little-mermaid-1.html"><img src="../img/TheLittleMermaid1.jpg" alt"The Little Mermaid"></a>
+        <a href="../movies/big-hero-6.html"><img src="../img/BigHero6.jpg" alt"Big Hero 6"></a>
+        <a href="../movies/mulan-1.html"><img src="../img/Mulan1.jpg" alt"Mulan"></a>
+        <a href="../movies/toy-story-1.html"><img src="../img/ToyStory1.jpg" alt"Toy Story"></a>
+        <a href="../movies/finding-nemo-1.html"><img src="../img/FindingNemo1.jpg" alt"Finding Nemo"></a>
+
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <br>
+        <h4>Mejia Web Design, Copyright © 2017</h4>
+        <br>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

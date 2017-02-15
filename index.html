@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/Skull.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <title>Disney | Login</title>
+</head>
+<body>
+  <style>
+    body{
+      background: black;
+      text-align:center;
+    }
+  </style>
+
+  <!-- <?php
+    $password = "Disney123";
+    if(isset($_POST['submit'])){
+      $attempt = $_POST['pass'];
+    }else{
+      $attempt = NULL;
+    }
+
+    if($password == $attempt){
+      header('Location: index.html)
+    }else{
+      echo '<script type="text/javascript">alert("Wrong password! Try again!");</script>';
+    }
+
+  ?>
+
+  <form name="form1" action="page2.php" method="post">
+   <input type="hidden" name="input1" value="value1" />
+  </form> -->
+
+  <div id="password">
+    <h1>ENTER PASSWORD</h2>
+    <input type="text" id="pass" placeholder="Enter Password Here" onKeyDown="pressedEnter(event)">
+    <input type="submit" value="SUBMIT" onclick="verify()">
+      <!-- <input type="text" name="pass" placeholder="Enter Password Here">
+      <input type="submit" name="submit" value="SUBMIT"> -->
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
